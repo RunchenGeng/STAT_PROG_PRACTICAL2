@@ -1,3 +1,6 @@
+#########
+#q5
+#In this part 
 dloop <- function(n, nrep) {
   final_result <- rep(0, 2 * n)
   for (i in 1:nrep) {
@@ -18,7 +21,7 @@ dloop <- function(n, nrep) {
   final_result/nrep
 }
 
-
+#
 fin <- dloop(50, 10000)
 
 sum <- 0
@@ -29,11 +32,9 @@ for (i in 51:100) {
 prb <- 1-sum
 
 
-check <- 1/(1:100)
-sumcheck <- 0
-for (i in 51:100) {
-  
-  sumcheck <- sumcheck + check[i]
-}
-prbcheck <- 1-sumcheck
-
+#
+cols <-  rep(c("light blue","red"),each = 50)
+plot(fin,main = 'dloop for n = 50, nrep = 10000',col = cols,type="h",xlab = 'length of loops',ylab = 'probability of existence')
+legend("topright", 
+        legend = c("less than 50", "more than 50"), 
+       fill = c("light blue", "red"))
