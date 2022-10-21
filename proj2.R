@@ -13,6 +13,9 @@
 # Jake Lawler (s2451377)
 
 
+#################### Github Repository ####################
+
+# https://github.com/RunchenGeng/STAT_PROG_PRACTICAL2
 
 
 #################### Contributions ####################
